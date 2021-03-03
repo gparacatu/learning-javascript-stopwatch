@@ -36,7 +36,6 @@ li {
     justify-content: center;
     height: inherit;
     margin: auto;
-    background-color: #ff9501;
 
 }
 .content--area img {
@@ -74,7 +73,6 @@ li {
         "start-button start-button start-button start-button start-button start-button stop-button stop-button stop-button stop-button stop-button stop-button"   
     ;
     padding-right: 2rem;
-    background-color: rgba(221, 221, 221, 0.459);
 
 }
 .horas {
