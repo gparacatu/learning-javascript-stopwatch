@@ -25,7 +25,7 @@ function startStop() {
     
     startStopButton = document.getElementById("start-stop-button");
     if(startStopButton.innerHTML == "START") {
-        timer = setInterval(cronometro, 10);
+        timer = setInterval(cronometro, 1000);
         startStopButton.innerHTML = "STOP";
     } else {
         clearInterval(timer);
