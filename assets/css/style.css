@@ -159,3 +159,8 @@ li {
         display: none;
     }
 }
+@media (max-height: 540px) {
+    .content--area img {
+        display: none;
+    }
+}
