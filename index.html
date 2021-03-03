@@ -17,14 +17,14 @@
             <div class="content--area">
                 <img src="assets/images/clock-edited.png" alt="">
                 <div class="grid-area">
-                <div id="horas" class="horas">0</div>
-                <div class="dot--hours">:</div>
-                <div id="minutos-horas" class="minutos">0</div>
-                <div id="minutos" class="segundos">0</div>
-                <div class="dot--seconds">:</div>
-                <div id="segundos" class="milesimos">0</div>
-                <div onclick="start()" class="start-button">Start</div>
-                <div onclick="stop()" class="stop-button">Stop</div>
+                <div id="horas" class="horas conteudo">0</div>
+                <div class="dot--hours">H : M</div>
+                <div id="minutos-horas" class="minutos conteudo">0</div>
+                <div id="minutos" class="segundos conteudo">0</div>
+                <div class="dot--seconds">M : S</div>
+                <div id="segundos" class="milesimos conteudo">0</div>
+                <div onclick="startStop()" id="start-stop-button" class="start-button">Start</div>
+                <div onclick="resetar()" class="stop-button">Reset</div>
                 </div>                
             </div>
 

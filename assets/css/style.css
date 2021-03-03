@@ -30,12 +30,13 @@ li {
     background-color: rgb(0, 0, 0);
 }
 .content--area {
-    max-width: 128rem;
+    max-width: 40rem;
     display: flex;
     align-items: center;
     justify-content: center;
     height: inherit;
     margin: auto;
+    background-color: #ff9501;
 
 }
 .content--area img {
@@ -43,6 +44,7 @@ li {
     width: 100%;
     height: inherit;
     max-width: 54.8rem;
+    min-width: 54.8rem;
     max-height: 56.4rem;
     z-index: 1;
 }
@@ -56,7 +58,6 @@ li {
     max-width: 40rem;
     width: 100%;
     height: inherit;
-    gap: 2rem;
     z-index: 99;
     grid-template-areas: 
         "segundos segundos segundos segundos segundos dot--seconds dot--seconds milisegundos milisegundos milisegundos milisegundos milisegundos"
@@ -72,6 +73,9 @@ li {
         "start-button start-button start-button start-button start-button start-button stop-button stop-button stop-button stop-button stop-button stop-button"
         "start-button start-button start-button start-button start-button start-button stop-button stop-button stop-button stop-button stop-button stop-button"   
     ;
+    padding-right: 2rem;
+    background-color: rgba(221, 221, 221, 0.459);
+
 }
 .horas {
     grid-area: horas;
@@ -85,15 +89,17 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 12rem;
     grid-area: dot--hours;
     margin-bottom: 5rem;
+    font-size: 3rem;
 }
 .minutos {
     grid-area: minutos;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 12rem;
     margin-bottom: 5rem;
 }
 .segundos {
@@ -101,7 +107,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 12rem;
     padding-bottom: 5rem;
 }
 .dot--seconds {
@@ -110,13 +116,14 @@ li {
     align-items: center;
     justify-content: center;
     padding-bottom: 5rem;
+    font-size: 3rem;
 }
 .milesimos {
     grid-area: milisegundos;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 12rem;
     padding-bottom: 5rem;    
 }
 .start-button {
@@ -126,10 +133,9 @@ li {
     justify-content: center;
     width: 100%;
     font-size: 3rem;
-    padding-right: 6rem;
-    margin-bottom: 4rem;
     text-transform: uppercase;
     cursor: pointer;
+    width: 12rem;
 }
 .start-button:hover {    
     color: #333333;
@@ -141,9 +147,10 @@ li {
     justify-content: center;
     width: 100%;
     font-size: 3rem;
-    margin-bottom: 4rem;
+    padding-left: 2rem;
     text-transform: uppercase;
     cursor: pointer;
+    width: 12rem;
 }
 .stop-button:hover {
     color: #ff9501;

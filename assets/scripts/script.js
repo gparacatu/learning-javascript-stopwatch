@@ -21,12 +21,19 @@ function cronometro() {
 
 }
 
-function start() {
-    timer = setInterval(cronometro, 1000);
+function startStop() {
+    
+    startStopButton = document.getElementById("start-stop-button");
+    if(startStopButton.innerHTML == "START") {
+        timer = setInterval(cronometro, 10);
+        startStopButton.innerHTML = "STOP";
+    } else {
+        clearInterval(timer);
+        startStopButton.innerHTML = "START";
+    }
 }
 
-function stop() {
-    clearInterval(timer);
+function resetar() {
+    document.querySelectorAll(".conteudo").forEach((item) => item.innerHTML = 0);
 }
-
  
