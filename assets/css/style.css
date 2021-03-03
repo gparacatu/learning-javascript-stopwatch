@@ -154,3 +154,8 @@ li {
     color: #ff9501;
 }
 
+@media (max-width: 550px) {
+    .content--area img {
+        display: none;
+    }
+}
